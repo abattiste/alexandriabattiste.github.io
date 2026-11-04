@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandria Battiste | Senior Learning Architect & Curriculum Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-slate-200">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div>
+                <span class="font-bold text-lg text-slate-900 tracking-tight">Alexandria Battiste</span>
+                <p class="text-xs text-slate-600 font-medium">Senior Learning Architect & Curriculum Developer</p>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
+                <a href="#case-studies" class="hover:text-slate-900 transition-colors">Case Studies</a>
+                <a href="#expertise" class="hover:text-slate-900 transition-colors">Expertise</a>
+            </nav>
+            <div>
+                <a href="mailto:abattisteid@gmail.com" class="bg-slate-900 hover:bg-slate-800 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors shadow-sm">
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 md:py-28 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 tracking-wide uppercase">
+                    Enterprise Learning Architecture & Strategy
+                </span>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-[1.15]">
+                    Designing scalable workforce programs for global tech ecosystems.
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Senior Learning Architect and Curriculum Developer specializing in workforce needs analysis, agile curriculum design, and AI-assisted enablement workflows across complex global business units.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#case-studies" class="bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-lg transition-colors text-sm shadow-sm">
+                        Explore Case Studies
+                    </a>
+                    <a href="mailto:abattisteid@gmail.com" class="border border-slate-300 hover:border-slate-400 text-slate-700 font-medium px-6 py-3 rounded-lg transition-colors text-sm">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-5">
+                <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Professional workspace" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Overview -->
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="max-w-2xl space-y-4">
+                <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Professional Focus</h2>
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">Bridging technical complexity and workforce clarity.</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Operating at the intersection of technical program management, product enablement, and instructional design. My work centers on translating deep technical requirements and software migrations into streamlined, high-impact learning experiences for thousands of internal roles and global audiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 space-y-16">
+            <div class="space-y-4">
+                <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Featured Work</h2>
+                <h3 class="text-3xl font-bold text-slate-900 tracking-tight">Selected Case Studies & Initiatives</h3>
+                <p class="text-slate-600 max-w-xl">A look at enterprise-grade architecture projects, workforce need analyses, and agile curriculum compression frameworks.</p>
+            </div>
+
+            <div class="space-y-20">
+                <!-- Case Study 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-6 space-y-4">
+                        <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Strategy & Analysis</span>
+                        <h4 class="text-2xl font-bold text-slate-900">Workforce Needs Analysis Framework</h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            Architected comprehensive skill gap assessments and structured competency frameworks across thousands of roles in global technical business units, aligning training milestones directly with core product metrics.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-2 pt-1">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Global stakeholder alignment across engineering and product teams</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Standardized role-based assessment metrics</li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Workforce Needs Analysis Strategy" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-6 md:order-2 space-y-4">
+                        <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Curriculum Architecture</span>
+                        <h4 class="text-2xl font-bold text-slate-900">90-to-30 Day Program Compression</h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            Scoped and architected a strategic curriculum compression initiative. Audited 193 source pages and restructured interactive learning pathways to reduce daily cognitive load while preserving core technical competencies.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-2 pt-1">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Streamlined 193 documentation pages into streamlined workflows</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Optimized pace for onboarding technical product managers</li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-6 md:order-1">
+                        <div class="rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Curriculum Compression Architecture" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-6 space-y-4">
+                        <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Enablement & Tooling</span>
+                        <h4 class="text-2xl font-bold text-slate-900">Enterprise AI Tool Enablement</h4>
+                        <p class="text-slate-600 leading-relaxed">
+                            Led the rollout and integration of modern AI-assisted learning tools, including Sana Learning and Claude workflows, empowering cross-functional teams to author and iterate on technical enablement at scale.
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-2 pt-1">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Integrated Sana Learning and Claude into team authoring pipelines</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Authored modular templates for cross-team adoption</li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-6">
+                        <div class="rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Enterprise AI Tool Enablement" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Expertise -->
+    <section id="expertise" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 space-y-12">
+            <div class="space-y-4">
+                <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Capabilities</h2>
+                <h3 class="text-3xl font-bold text-slate-900 tracking-tight">Technical & Strategic Competencies</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <h4 class="font-bold text-slate-900 text-lg">Program Strategy</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Cross-functional stakeholder management, agile delivery frameworks, global needs analysis, and roadmap scoping.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <h4 class="font-bold text-slate-900 text-lg">Curriculum Architecture</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Instructional design, large-scale onboarding compression, performance metrics, and WCAG-compliant digital standards.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <h4 class="font-bold text-slate-900 text-lg">AI & Modern Toolstack</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">Sana Learning, Claude workflows, Articulate Storyline, Rise 360, Adobe Suite, and scalable template engineering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="bg-white border-t border-slate-200 py-16">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
+            <h3 class="text-2xl font-bold text-slate-900">Let's build impactful programs together.</h3>
+            <p class="text-slate-600 max-w-md mx-auto text-sm">Reach out to discuss senior technical enablement roles, learning architecture projects, or program management opportunities.</p>
+            <div>
+                <a href="mailto:abattisteid@gmail.com" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition-colors text-sm shadow-sm">
+                    abattisteid@gmail.com
+                </a>
+            </div>
+            <p class="text-xs text-slate-600 pt-8">This site itself was engineered as an interactive portfolio artifact by Alexandria Battiste.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
