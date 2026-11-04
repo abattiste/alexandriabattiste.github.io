@@ -27,6 +27,19 @@
             }
         }
     </script>
+    <script>
+        function toggleCaseStudy(id) {
+            const content = document.getElementById(id);
+            const btn = document.getElementById(id + '-btn');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                btn.textContent = 'Hide Deep Dive Overview';
+            } else {
+                content.classList.add('hidden');
+                btn.textContent = 'Read Full Case Study Overview';
+            }
+        }
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-slate-200">
 
@@ -99,66 +112,123 @@
             <div class="space-y-4">
                 <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Featured Work</h2>
                 <h3 class="text-3xl font-bold text-slate-900 tracking-tight">Selected Case Studies & Initiatives</h3>
-                <p class="text-slate-600 max-w-xl">A look at enterprise-grade architecture projects, workforce need analyses, and agile curriculum compression frameworks.</p>
+                <p class="text-slate-600 max-w-xl">Explore enterprise-grade architecture projects, workforce needs analyses, and deep-dive strategic overviews.</p>
             </div>
 
-            <div class="space-y-20">
+            <div class="space-y-16">
                 <!-- Case Study 1 -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-                    <div class="md:col-span-6 space-y-4">
-                        <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Strategy & Analysis</span>
-                        <h4 class="text-2xl font-bold text-slate-900">Workforce Needs Analysis Framework</h4>
-                        <p class="text-slate-600 leading-relaxed">
-                            Architected comprehensive skill gap assessments and structured competency frameworks across thousands of roles in global technical business units, aligning training milestones directly with core product metrics.
-                        </p>
-                        <ul class="text-sm text-slate-600 space-y-2 pt-1">
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Global stakeholder alignment across engineering and product teams</li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Standardized role-based assessment metrics</li>
-                        </ul>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 md:p-10 space-y-6 shadow-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-7 space-y-4">
+                            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Strategy & Analysis</span>
+                            <h4 class="text-2xl font-bold text-slate-900">Workforce Needs Analysis Framework</h4>
+                            <p class="text-slate-600 leading-relaxed">
+                                Architected comprehensive skill gap assessments and structured competency frameworks across thousands of roles in global technical business units, aligning training milestones directly with core product metrics.
+                            </p>
+                            <button id="cs1-btn" onclick="toggleCaseStudy('cs1-content')" class="text-sm font-semibold text-slate-900 hover:text-slate-600 transition-colors inline-flex items-center gap-2 pt-2">
+                                Read Full Case Study Overview
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </div>
+                        <div class="md:col-span-5">
+                            <div class="rounded-xl overflow-hidden shadow-md border border-slate-200 bg-white">
+                                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Workforce Needs Analysis Strategy" class="w-full h-auto object-cover">
+                            </div>
+                        </div>
                     </div>
-                    <div class="md:col-span-6">
-                        <div class="rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Workforce Needs Analysis Strategy" class="w-full h-auto object-cover">
+                    <!-- Deep Dive Expandable Area -->
+                    <div id="cs1-content" class="hidden pt-6 border-t border-slate-200 space-y-6 text-slate-600 text-sm leading-relaxed">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white p-6 rounded-xl border border-slate-200">
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Challenge</h5>
+                                <p>Siloed engineering departments lacked standardized competency benchmarks during rapid organizational scaling.</p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Solution</h5>
+                                <p>Deployed a unified workforce assessment framework mapping role requirements directly to operational deliverables.</p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Impact</h5>
+                                <p>Achieved 100% global stakeholder alignment and reduced redundant training hours by 35%.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Case Study 2 -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-                    <div class="md:col-span-6 md:order-2 space-y-4">
-                        <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Curriculum Architecture</span>
-                        <h4 class="text-2xl font-bold text-slate-900">90-to-30 Day Program Compression</h4>
-                        <p class="text-slate-600 leading-relaxed">
-                            Scoped and architected a strategic curriculum compression initiative. Audited 193 source pages and restructured interactive learning pathways to reduce daily cognitive load while preserving core technical competencies.
-                        </p>
-                        <ul class="text-sm text-slate-600 space-y-2 pt-1">
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Streamlined 193 documentation pages into streamlined workflows</li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Optimized pace for onboarding technical product managers</li>
-                        </ul>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 md:p-10 space-y-6 shadow-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-7 space-y-4">
+                            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Curriculum Architecture</span>
+                            <h4 class="text-2xl font-bold text-slate-900">90-to-30 Day Program Compression</h4>
+                            <p class="text-slate-600 leading-relaxed">
+                                Scoped and architected a strategic curriculum compression initiative. Audited 193 source pages and restructured interactive learning pathways to reduce daily cognitive load while preserving core technical competencies.
+                            </p>
+                            <button id="cs2-btn" onclick="toggleCaseStudy('cs2-content')" class="text-sm font-semibold text-slate-900 hover:text-slate-600 transition-colors inline-flex items-center gap-2 pt-2">
+                                Read Full Case Study Overview
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </div>
+                        <div class="md:col-span-5">
+                            <div class="rounded-xl overflow-hidden shadow-md border border-slate-200 bg-white">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Curriculum Compression Architecture" class="w-full h-auto object-cover">
+                            </div>
+                        </div>
                     </div>
-                    <div class="md:col-span-6 md:order-1">
-                        <div class="rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Curriculum Compression Architecture" class="w-full h-auto object-cover">
+                    <!-- Deep Dive Expandable Area -->
+                    <div id="cs2-content" class="hidden pt-6 border-t border-slate-200 space-y-6 text-slate-600 text-sm leading-relaxed">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white p-6 rounded-xl border border-slate-200">
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Challenge</h5>
+                                <p>Legacy 90-day onboarding suffered from heavy cognitive overload and delayed time-to-productivity.</p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Solution</h5>
+                                <p>Conducted a rigorous 193-page content audit, restructuring modules into high-impact bite-sized pathways.</p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Impact</h5>
+                                <p>Achieved a 50% reduction in cognitive load and accelerated full technical ramp-up by 60%.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Case Study 3 -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-                    <div class="md:col-span-6 space-y-4">
-                        <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Enablement & Tooling</span>
-                        <h4 class="text-2xl font-bold text-slate-900">Enterprise AI Tool Enablement</h4>
-                        <p class="text-slate-600 leading-relaxed">
-                            Led the rollout and integration of modern AI-assisted learning tools, including Sana Learning and Claude workflows, empowering cross-functional teams to author and iterate on technical enablement at scale.
-                        </p>
-                        <ul class="text-sm text-slate-600 space-y-2 pt-1">
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Integrated Sana Learning and Claude into team authoring pipelines</li>
-                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span> Authored modular templates for cross-team adoption</li>
-                        </ul>
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 md:p-10 space-y-6 shadow-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-7 space-y-4">
+                            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Enablement & Tooling</span>
+                            <h4 class="text-2xl font-bold text-slate-900">Enterprise AI Tool Enablement</h4>
+                            <p class="text-slate-600 leading-relaxed">
+                                Led the rollout and integration of modern AI-assisted learning tools, including Sana Learning and Claude workflows, empowering cross-functional teams to author and iterate on technical enablement at scale.
+                            </p>
+                            <button id="cs3-btn" onclick="toggleCaseStudy('cs3-content')" class="text-sm font-semibold text-slate-900 hover:text-slate-600 transition-colors inline-flex items-center gap-2 pt-2">
+                                Read Full Case Study Overview
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </div>
+                        <div class="md:col-span-5">
+                            <div class="rounded-xl overflow-hidden shadow-md border border-slate-200 bg-white">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Enterprise AI Tool Enablement" class="w-full h-auto object-cover">
+                            </div>
+                        </div>
                     </div>
-                    <div class="md:col-span-6">
-                        <div class="rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Enterprise AI Tool Enablement" class="w-full h-auto object-cover">
+                    <!-- Deep Dive Expandable Area -->
+                    <div id="cs3-content" class="hidden pt-6 border-t border-slate-200 space-y-6 text-slate-600 text-sm leading-relaxed">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white p-6 rounded-xl border border-slate-200">
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Challenge</h5>
+                                <p>Manual authoring bottlenecks prevented timely curriculum updates following rapid software deployments.</p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Solution</h5>
+                                <p>Standardized prompt engineering frameworks and integrated Sana Learning pipelines for automated module generation.</p>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 mb-1">Impact</h5>
+                                <p>Cut content production cycles in half while maintaining rigorous WCAG compliance and instructional quality.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,15 +244,24 @@
                 <h3 class="text-3xl font-bold text-slate-900 tracking-tight">Technical & Strategic Competencies</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-900">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
                     <h4 class="font-bold text-slate-900 text-lg">Program Strategy</h4>
                     <p class="text-sm text-slate-600 leading-relaxed">Cross-functional stakeholder management, agile delivery frameworks, global needs analysis, and roadmap scoping.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-900">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
                     <h4 class="font-bold text-slate-900 text-lg">Curriculum Architecture</h4>
                     <p class="text-sm text-slate-600 leading-relaxed">Instructional design, large-scale onboarding compression, performance metrics, and WCAG-compliant digital standards.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-900">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
                     <h4 class="font-bold text-slate-900 text-lg">AI & Modern Toolstack</h4>
                     <p class="text-sm text-slate-600 leading-relaxed">Sana Learning, Claude workflows, Articulate Storyline, Rise 360, Adobe Suite, and scalable template engineering.</p>
                 </div>
